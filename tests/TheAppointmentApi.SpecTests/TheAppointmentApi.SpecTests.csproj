@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\TheAppointmentApi.Service\TheAppointmentApi.Service.csproj" />
+    <ProjectReference Include="..\..\src\TheAppointmentApi.WebApi\TheAppointmentApi.WebApi.csproj" />
   </ItemGroup>
 
   <ItemGroup>

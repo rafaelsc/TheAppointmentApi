@@ -2,35 +2,38 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using TheAppointmentApi.WebApi.Controllers.Model;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using TheAppointmentApi.WebApi.Models;
 
 namespace TheAppointmentApi.WebApi.Controllers
 {
-    [Produces("application/json")]
-    [Route("api/Appointments")]
-    public class AppointmentsController : Controller
+    public class AppointmentsController : ApiController
     {
-        // GET: api/Appointments
-       
-        // GET: api/appointment/asasasasas/2018-12-15/free
-        [HttpGet("{token}/{date}/free", Name = "GetFreeSlots")]
-        public string Get([Required] string token,  [Required] DateTimeOffset? date)
+        // GET: api/appointment
+        [HttpGet]
+        public IHttpActionResult Get() => NotFound();
+
+        // GET: api/appointment/token/2018-12-15/free
+        [Route("{token}/{date}/free")]
+        [HttpGet]
+        public IEnumerable<AppointmentGetResultModel> Get([Required] string token,  [Required] DateTimeOffset? date)
         {
             throw new NotImplementedException();
         }
         
-        // POST: api/Appointments
-        [HttpPost("{token}/{date}/{time}/{patientName}")]
+        // POST: api/appointment/token/2018-12-15/10:00/JhonSnow
+        [Route("{token}/{date}/{time}/{patientName}")]
+        [HttpPost]
         public AppointmentPostResultModel Post([Required] string token,  [Required] DateTimeOffset? date,  [Required] DateTimeOffset? time, [Required] string patientName)
         {
             throw new NotImplementedException();
         }
         
-        // DELETE: api/Appointments/5
-        [HttpDelete("{token}/{appointmentId}")]
+        // DELETE: api/appointment/5
+        [Route("{token}/{appointmentId}")]
+        [HttpDelete]
         public void Delete([Required] string token, [Required] string appointmentId)
         {
             throw new NotImplementedException();
