@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="JetBrains.Annotations, Version=11.1.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\JetBrains.Annotations.11.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -277,6 +280,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TheAppointmentApi.Data\TheAppointmentApi.Data.csproj">
+      <Project>{0033CC98-4624-497B-9CFB-AFCF5260B63B}</Project>
+      <Name>TheAppointmentApi.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TheAppointmentApi.Service\TheAppointmentApi.Service.csproj">
+      <Project>{8FF44CEF-539B-415C-9D01-0B4C0C59ABA7}</Project>
+      <Name>TheAppointmentApi.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

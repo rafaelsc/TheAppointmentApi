@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheAppointmentApi.Service",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheAppointmentApi.WebApi", "src\TheAppointmentApi.WebApi\TheAppointmentApi.WebApi.csproj", "{92F93A19-F848-46D7-A026-01E6BFEE71FB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{946F1C7F-FF6A-4B80-849A-CF6C380515F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheAppointmentApi.Data", "src\TheAppointmentApi.Data\TheAppointmentApi.Data.csproj", "{0033CC98-4624-497B-9CFB-AFCF5260B63B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{92F93A19-F848-46D7-A026-01E6BFEE71FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92F93A19-F848-46D7-A026-01E6BFEE71FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92F93A19-F848-46D7-A026-01E6BFEE71FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0033CC98-4624-497B-9CFB-AFCF5260B63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0033CC98-4624-497B-9CFB-AFCF5260B63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0033CC98-4624-497B-9CFB-AFCF5260B63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0033CC98-4624-497B-9CFB-AFCF5260B63B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7C298706-AC4B-49CA-A4CA-79DEE3F51D35} = {8407C517-AB32-4736-B102-C954D5755B75}
 		{8FF44CEF-539B-415C-9D01-0B4C0C59ABA7} = {74FE8412-CCCE-445F-9AC0-A8E5257C678A}
+		{0033CC98-4624-497B-9CFB-AFCF5260B63B} = {946F1C7F-FF6A-4B80-849A-CF6C380515F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28A05E7F-B747-4AA2-AB61-BABBC0DE96B7}

@@ -14,3 +14,4 @@ Scenario: A 'user' can list all free appointment slots in a future busy date.
    Given a past date, and the TheAppointmentApi have 0 free slots that day.
     When restfull GET request is done to the API endpoint
 	Then a list of all 0 free same slots should be return.
+
