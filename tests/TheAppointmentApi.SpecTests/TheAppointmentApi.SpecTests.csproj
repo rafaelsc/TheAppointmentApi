@@ -26,6 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\TheAppointmentApi.Service\TheAppointmentApi.Service.csproj" />
+    <ProjectReference Include="..\..\src\TheAppointmentApi.WebApi\TheAppointmentApi.WebApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="API.feature.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
