@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="22.0.8" />
+    <PackageReference Include="Common.Logging.Serilog" Version="4.3.6" />
+    <PackageReference Include="FluentAssertions" version="5.3.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="Moq" Version="4.8.2" />
+    <PackageReference Include="Moq.Analyzers" Version="0.0.4.43043" />
+    <PackageReference Include="Serilog.Sinks.Observable" Version="2.0.2" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="4.0.0" />
+    <PackageReference Include="Serilog.Sinks.XUnit" Version="1.0.5" />
+    <PackageReference Include="SimpleInjector" Version="4.2.2" />
+    <PackageReference Include="SpecFlow" Version="2.3.2" />
+    <PackageReference Include="System.Reactive" Version="3.1.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="SpecFlow.NetCore" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="API.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>API.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="API.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>API.feature.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
